@@ -1,32 +1,58 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="container">
+      <header>
+        <div id="nav">
+          <div id="logo">
+            PlowPumpService
+          </div>
+          <div class="spacer"></div>
+          <div id="links">
+            <router-link to="/">Home</router-link>
+            <router-link to="/about">About</router-link>
+            <router-link to="/shop">Shop</router-link>
+          </div>
+        </div>
+      </header>
+      <router-view/>
+      <footer>
+        © PlowPumpService 2020
+      </footer>
     </div>
-    <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<style lang="sass">
+body
+  margin: 0
 
-#nav {
-  padding: 30px;
+#app
+  font-family: Avenir, Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: center
+  color: #2c3e50
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+.container
+  width: 1000px
+  margin: 0 auto
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+#nav
+  display: flex
+  flex-direction: row
+  padding: 20px 10px
+  align-items: center
+
+  #logo
+    color: blue
+    font-weight: bold
+    font-size: 24px
+
+  .spacer
+    flex-grow: 1
+
+  a
+    font-weight: bold
+    color: #2c3e50
+    margin: 0 10px
 </style>

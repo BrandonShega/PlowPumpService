@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Dipstick Kit",
+        "description": "Check this out!!",
+        "price": 0,
+        "image": "stick.gif"
+    },
+    {
+        "id": 2,
+        "title": "Mechanic Test Kit",
+        "description": "This is a great kit for the person that repairs Meyer Snow Plows!",
+        "price": 0,
+        "image": "toolz.gif"
+    },
+    {
+        "id": 3,
+        "title": "External Adjustment Kit",
+        "description": "Easily adjust the drop speed of your Meyer E-60 unit!",
+        "price": 0,
+        "image": "adjustT1.gif"
+    }
+]
